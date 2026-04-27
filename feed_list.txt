@@ -1,0 +1,42 @@
+# Official Vendor Blogs
+https://aws.amazon.com/blogs/aws/feed/
+https://azure.microsoft.com/en-us/updates/feed/
+https://cloudblog.withgoogle.com/rss
+
+# InfoQ (Cloud & DevOps): Excellent for deep dives into architecture and culture shifts.
+https://feed.infoq.com/cloud/news/
+https://feed.infoq.com/development-and-operations/news/
+
+# The New Stack: Focuses heavily on the cloud-native ecosystem (Kubernetes, serverless, and observability).
+https://thenewstack.io/blog/feed/
+
+# DevOps.com: Covers broad industry trends, webinars, and security (DevSecOps).
+https://devops.com/feed/
+
+# Cloud Native Computing Foundation (CNCF): If you want to track the actual graduation of tools like Kubernetes or Prometheus.
+https://www.cncf.io/blog/feed/
+
+# SRE Weekly: A curated list of the week's best Site Reliability Engineering articles and post-mortems.
+https://sreweekly.com/feed/
+
+# The Register (Virtualization/Cloud): Great for a more cynical, "no-nonsense" take on enterprise tech shifts.
+https://www.theregister.com/infrastructure/cloud/headlines.atom
+
+# Last Week in AWS: While AWS-focused, Corey Quinn’s commentary provides a unique perspective on cost-management and service utility that applies to general cloud engineering logic.
+https://www.lastweekinaws.com/feed/
+
+# HashiCorp Blog: Essential for keeping up with Terraform and Vault updates.
+https://www.hashicorp.com/blog/feed.xml
+
+# Pulumi Blog: Good for modern "Infrastructure as Software" perspectives.
+https://www.pulumi.com/blog/rss.xml
+
+# Hacker News (Cloud/DevOps Search): You can use services like HNRSS to create custom feeds based on keywords (e.g., "Terraform" or "Azure Functions").
+# https://hnrss.org/newest?q=Cloud+Engineering
+
+# Medium (Towards Data Science / DevOps):
+# https://medium.com/feed/tag/devops
+# https://medium.com/feed/tag/cloud-computing
+
+# IDEAS
+# Avoid duplicate info. Try to show relevant things that are actually causing culture shifts. Tag every item accordingly (Terraform/IaC, CI/CD, Cloud Architecture, Pricing Change, Service News, Relevant Cloud platform).
