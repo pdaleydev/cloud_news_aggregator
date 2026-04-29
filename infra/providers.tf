@@ -65,6 +65,13 @@ provider "azurerm" {
   subscription_id = var.subscription_id
 }
 
+# AWS for Route 53 Records to be able to send emails from my domain.
+provider "aws" {
+  region                   = var.aws_region
+  shared_credentials_files = [var.aws_credential_path]
+  profile                  = var.aws_user
+}
+
 # ---------------------------------------------------------------------------
 # AzureAD — needed to look up the current principal's object ID so we can
 # grant it Key Vault access policies during development without hard-coding
