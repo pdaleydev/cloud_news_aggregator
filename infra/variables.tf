@@ -16,7 +16,7 @@
 # Core / global
 # ---------------------------------------------------------------------------
 
-variable "subscription_id" {
+variable "azure_subscription_id" {
   description = "Azure subscription ID to deploy all resources into."
   type        = string
 
@@ -26,7 +26,21 @@ variable "subscription_id" {
   }
 }
 
-variable "location" {
+variable "aws_region"{
+  description = "Region Used for AWS calls. Since Route 53 is Global, us-east-1"
+  default = "us-east-1"
+}
+
+# TODO 
+variable "aws_credential_path" {
+  description = "Path of locally stored AWS credentials."
+}
+
+variable "aws_user" {
+  description  = "Name of the AWS profile used to perform acitons on Terraform's behalf."
+}
+
+variable "azure_location" {
   description = "Azure region for all resources (e.g. 'eastus', 'westeurope')."
   type        = string
   default     = "eastus"
@@ -53,6 +67,10 @@ variable "tags" {
   description = "Additional tags merged onto every resource. The module already applies project, environment, and managed-by tags automatically."
   type        = map(string)
   default     = {}
+}
+
+variable "domain_name" {
+  description = "Root domain."
 }
 
 

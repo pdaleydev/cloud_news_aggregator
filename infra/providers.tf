@@ -62,7 +62,7 @@ provider "azurerm" {
     }
   }
 
-  subscription_id = var.subscription_id
+  subscription_id = var.azure_subscription_id
 }
 
 # AWS for Route 53 Records to be able to send emails from my domain.

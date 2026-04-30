@@ -7,7 +7,7 @@
 # ---------------------------------------------------------------------------
 
 data "aws_route53_zone" "main" {
-  name = "yourdomain.com." # Replace with your actual domain
+  name = var.domain_name # Replace with your actual domain
 }
 
 # ---------------------------------------------------------------------------
@@ -16,7 +16,7 @@ data "aws_route53_zone" "main" {
 
 resource "azurerm_resource_group" "cna" {
   name     = "rg-${var.project}-${var.environment}"
-  location = var.location
+  location = var.azure_location
   tags     = var.tags
 }
 
@@ -63,7 +63,7 @@ resource "azurerm_email_communication_service" "email" {
 }
 
 resource "azurerm_email_communication_service_domain" "custom" {
-  name              = "mail.yourdomain.com"
+  name              = "mail.${var.domain_name}"
   email_service_id  = azurerm_email_communication_service.email.id
   domain_management = "CustomerManaged"
 }
